@@ -30,7 +30,7 @@
 
       <div class="row">
         {% for product in product_objects %}
-        <div class="col-md-3">
+        <div class="col-md-3 mt-2 mb-2">
           <div class="card">
             <img src="{{ product.image }}" class="card-img-top">
             <div class="card-body">
@@ -40,6 +40,8 @@
               <div class="card-text">
                 ${{ product.price }}
               </div>
+              <a href='/{{product.id}}' class="btn btn-warning">View</a>
+              <a class="btn btn-warning">Add to Cart</a>
             </div>
           </div>
         </div>
